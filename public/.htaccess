@@ -1,0 +1,6 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+RewriteRule ^books/\/([1-9][0-9]_)\/([a-zA-Z][a-zA-Z0-9\-]_)$ index.php?books=$2&id=$1[L]
+
+RewriteRule ^/(.\*)$ /samle/%1/$1 [L]
